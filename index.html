@@ -7,7 +7,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="description" content="CortexIMS connects construction projects, operations, quality, EHS and project data with digital solutions built for construction teams in the UAE.">
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo.png" rel="icon" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -32,7 +32,7 @@
    
 </head>
 
-<body>
+<body class="home-page">
 <!-- Topbar Start -->
 <div class="site-topbar container-fluid px-5 d-none d-lg-block">
     <div class="row gx-5">
@@ -124,7 +124,10 @@
         <button class="navbar-toggler"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+                data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -142,10 +145,10 @@
                 </a>
 
                 <a href="service.html" class="nav-item nav-link">
-                    Service
+                    Services
                 </a>
 
-                <a href="project.html" class="nav-item nav-link">
+                <a href="Solutions.html" class="nav-item nav-link">
                     Solutions
                 </a>
 
@@ -170,10 +173,11 @@
 </div>
 <!-- Navbar End -->
 
-<!-- Carousel Start -->
+<!-- ==================== HERO CAROUSEL START ==================== -->
 <div class="container-fluid p-0">
+
     <div id="header-carousel"
-         class="carousel slide carousel-fade"
+         class="home-hero carousel slide carousel-fade"
          data-bs-ride="carousel">
 
         <div class="carousel-inner">
@@ -183,26 +187,31 @@
 
                 <img class="w-100"
                      src="img/carousel-1.png"
-                     alt="CortexIMS Digital Construction Management">
+                     alt="Digital construction management and project delivery">
 
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 
                     <div class="p-3" style="max-width: 900px;">
 
-                        <i class="fa fa-home fa-3x text-primary mb-4 d-none d-sm-block"></i>
+                        <i class="fa fa-hard-hat fa-3x text-primary mb-4 d-none d-sm-block"></i>
 
-                        <h2 class="display-6 text-uppercase text-white mb-md-4">
+                        <h1 class="display-5 text-uppercase text-white mb-4">
                             From Site Reality to Digital Intelligence
-                        </h2>
+                        </h1>
 
-                        <a href="contact.html"
-                           class="btn btn-primary py-2 px-4 mt-2">
-                            Contact Us
+                        <p class="fs-5 text-white mb-4">
+                            Integrated Digital Solutions for Modern Construction Management
+                        </p>
+
+                        <a href="Solutions.html"
+                           class="btn btn-primary py-3 px-5 mt-2">
+                            Explore Our Solutions
                         </a>
 
                     </div>
 
                 </div>
+
             </div>
 
 
@@ -211,30 +220,48 @@
 
                 <img class="w-100"
                      src="img/carousel-2.png"
-                     alt="Integrated Digital Solutions for Modern Construction Management">
+                     alt="Connected construction workflows and project information">
 
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
 
                     <div class="p-3" style="max-width: 900px;">
 
-                        <i class="fa fa-tools fa-3x text-primary mb-4 d-none d-sm-block"></i>
+                        <i class="fa fa-project-diagram fa-3x text-primary mb-4 d-none d-sm-block"></i>
 
-                        <h2 class="display-6 text-uppercase text-white mb-md-4">
-                            Integrated Digital Solutions for Modern Construction Management
+                        <h2 class="display-5 text-uppercase text-white mb-4">
+                            One Connected View. Every Stage. Every Asset.
                         </h2>
 
+                        <p class="fs-5 text-white mb-4">
+                            Connect project information, construction workflows,
+                            and operational readiness across the asset lifecycle.
+                        </p>
+
                         <a href="contact.html"
-                           class="btn btn-primary py-2 px-4 mt-2">
-                            Contact Us
+                           class="btn btn-primary py-3 px-5 mt-2">
+                            Discuss Your Project
                         </a>
 
                     </div>
 
                 </div>
+
             </div>
 
         </div>
 
+        <div class="carousel-indicators">
+            <button type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"></button>
+            <button type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+        </div>
 
         <!-- Previous -->
         <button class="carousel-control-prev"
@@ -243,12 +270,9 @@
                 data-bs-slide="prev">
 
             <span class="carousel-control-prev-icon"
-                  aria-hidden="true">
-            </span>
+                  aria-hidden="true"></span>
 
-            <span class="visually-hidden">
-                Previous
-            </span>
+            <span class="visually-hidden">Previous</span>
 
         </button>
 
@@ -260,332 +284,525 @@
                 data-bs-slide="next">
 
             <span class="carousel-control-next-icon"
-                  aria-hidden="true">
-            </span>
+                  aria-hidden="true"></span>
 
-            <span class="visually-hidden">
-                Next
-            </span>
+            <span class="visually-hidden">Next</span>
 
         </button>
 
     </div>
-</div>
-<!-- Carousel End -->
 
-<!-- About Start -->
-<div class="container-fluid py-6 px-5">
-    <div class="row g-5">
+</div>
+<!-- ==================== HERO CAROUSEL END ==================== -->
+
+<section class="home-trust-strip container-fluid px-5 py-4" aria-label="How CortexIMS supports construction teams">
+    <div class="row g-3 align-items-center">
+        <div class="col-md-4">
+            <strong><i class="fa fa-link text-primary me-2" aria-hidden="true"></i>Connected workflows</strong>
+            <span>Link project stages, teams, and decisions.</span>
+        </div>
+        <div class="col-md-4">
+            <strong><i class="fa fa-clipboard-check text-primary me-2" aria-hidden="true"></i>Traceable information</strong>
+            <span>Keep actions and supporting records connected.</span>
+        </div>
+        <div class="col-md-4">
+            <strong><i class="fa fa-chart-line text-primary me-2" aria-hidden="true"></i>Measured progress</strong>
+            <span>Start with a focused workflow and agreed outcomes.</span>
+        </div>
+    </div>
+</section>
+
+<!-- ==================== ABOUT START ==================== -->
+<section class="container-fluid py-6 px-5"
+         id="about">
+
+    <div class="row g-5 align-items-center">
 
         <div class="col-lg-7">
-            <h1 class="display-5 text-uppercase mb-4">
-                We Are <span class="text-primary">CortexIMS</span>
-            </h1>
 
-            <h4 class="text-uppercase mb-3 text-body">
+            <span class="text-primary text-uppercase fw-bold small">
+                ABOUT CORTEXIMS
+            </span>
+
+            <h2 class="display-5 text-uppercase mt-3 mb-4">
+                We Are <span class="text-primary">CortexIMS</span>
+            </h2>
+
+            <h4 class="text-uppercase mb-3">
                 Digital Solutions for Smarter Construction Management
             </h4>
 
             <p>
-                CortexIMS is a digital construction solutions company focused on
-                transforming the way modern construction organizations manage
-                projects, operations, teams, quality, and EHS.
+                CortexIMS is a construction-focused digital solutions company
+                dedicated to connecting project information, workflows, teams,
+                quality, and Environment, Health &amp; Safety (EHS) across
+                modern construction environments.
             </p>
 
             <p>
-                Our integrated approach connects critical construction processes
-                and project information within one digital environment, helping
-                organizations improve visibility, streamline operations, enhance
-                collaboration, and make more informed decisions.
+                Our approach focuses on improving project visibility,
+                strengthening coordination, and maintaining information
+                continuity from planning and construction through handover
+                and facilities management.
             </p>
 
-            <div class="row gx-5 py-2">
-                <div class="col-sm-6 mb-2">
-                    <p class="fw-bold mb-2">
-                        <i class="fa fa-check text-primary me-3"></i>
-                        Integrated Construction Solutions
+            <p>
+                We believe technology should simplify construction management,
+                support better-informed decisions, and help teams maintain
+                clearer oversight of project activities.
+            </p>
+
+            <div class="row gx-4 py-3">
+
+                <div class="col-sm-6">
+
+                    <p class="fw-bold mb-3">
+                        <i class="fa fa-check text-primary me-2"></i>
+                        Integrated Construction Workflows
                     </p>
 
-                    <p class="fw-bold mb-2">
-                        <i class="fa fa-check text-primary me-3"></i>
-                        Better Project Visibility
+                    <p class="fw-bold mb-3">
+                        <i class="fa fa-check text-primary me-2"></i>
+                        Project Visibility &amp; Coordination
                     </p>
 
-                    <p class="fw-bold mb-2">
-                        <i class="fa fa-check text-primary me-3"></i>
-                        Smarter Operations
+                    <p class="fw-bold mb-3">
+                        <i class="fa fa-check text-primary me-2"></i>
+                        Quality &amp; EHS Management
                     </p>
+
                 </div>
 
-                <div class="col-sm-6 mb-2">
-                    <p class="fw-bold mb-2">
-                        <i class="fa fa-check text-primary me-3"></i>
-                        Connected Teams
+                <div class="col-sm-6">
+
+                    <p class="fw-bold mb-3">
+                        <i class="fa fa-check text-primary me-2"></i>
+                        Connected Project Information
                     </p>
 
-                    <p class="fw-bold mb-2">
-                        <i class="fa fa-check text-primary me-3"></i>
-                        Quality & EHS Management
+                    <p class="fw-bold mb-3">
+                        <i class="fa fa-check text-primary me-2"></i>
+                        Handover &amp; Asset Readiness
                     </p>
 
-                    <p class="fw-bold mb-2">
-                        <i class="fa fa-check text-primary me-3"></i>
-                        Digital Transformation
+                    <p class="fw-bold mb-3">
+                        <i class="fa fa-check text-primary me-2"></i>
+                        Lifecycle Continuity
                     </p>
+
                 </div>
+
             </div>
 
-            <p class="mb-4">
-                At CortexIMS, we believe that technology should simplify
-                construction management, not add complexity. Our solutions are
-                designed to create a more connected, transparent, and efficient
-                construction environment from project planning to daily
-                operations.
-            </p>
-
-            <a href="about.html" class="btn btn-primary py-3 px-5">
-                Learn More
+            <a href="about.html"
+               class="btn btn-primary py-3 px-5 mt-2">
+                Learn More About Us
             </a>
+
         </div>
 
-        <div class="col-lg-5 pb-5" style="min-height: 400px;">
-            <div class="position-relative bg-dark-radial h-100 ms-5">
-                <img
-                    class="position-absolute w-100 h-100 mt-5 ms-n5"
-                    src="img/ado23.jpg"
-                    style="object-fit: cover;"
-                    alt="CortexIMS digital construction management solutions">
+
+        <div class="col-lg-5 pb-4"
+             style="min-height: 400px;">
+
+            <div class="position-relative bg-dark-radial h-100 ms-4">
+
+                <img class="position-absolute w-100 h-100 mt-4 ms-n4"
+                     src="img/ado23.jpg"
+                     style="object-fit: cover;"
+                     alt="Construction professionals using digital project information"
+                     loading="lazy">
+
             </div>
+
         </div>
 
     </div>
-</div>
-<!-- About End -->
 
-<!-- Services Start -->
-<div class="container-fluid bg-light py-6 px-5">
-    <div class="text-center mx-auto mb-5" style="max-width: 750px;">
-        <h2 class="display-5 text-uppercase mb-4">
-            Our <span class="text-primary">Digital Solutions</span>
-            for Modern Construction
+</section>
+<!-- ==================== ABOUT END ==================== -->
+
+<!-- ==================== SERVICES START ==================== -->
+<section class="container-fluid bg-light py-6 px-5 home-services"
+         id="services">
+
+    <div class="services-intro text-center mx-auto mb-5"
+         style="max-width: 800px;">
+
+        <span class="page-eyebrow">Connected construction capabilities</span>
+
+        <h2 class="display-5 text-uppercase mt-3 mb-4">
+            Our <span class="text-primary">Digital Capabilities</span>
+            for Construction
         </h2>
 
-        <p>
-            Explore integrated digital solutions designed to improve
-            construction project management, streamline operations,
-            enhance collaboration, and provide better visibility across
-            your projects.
+        <p class="text-muted">
+            Explore construction-focused digital capabilities designed
+            to connect project workflows, organize critical information,
+            and support better visibility across project delivery,
+            quality, safety, and operations.
         </p>
-    </div>
-
-    <div class="row g-5">
-
-        <!-- Project Management -->
-        <div class="col-lg-4 col-md-6">
-            <div class="service-item bg-white d-flex flex-column align-items-center text-center">
-                <img class="img-fluid"
-                     src="img/service-1.jpg"
-                     alt="Construction Project Management Solutions">
-
-                <div class="service-icon bg-white">
-                    <i class="fa fa-3x fa-project-diagram text-primary"></i>
-                </div>
-
-                <div class="px-4 pb-4">
-                    <h4 class="text-uppercase mb-3">
-                        Construction Project Management
-                    </h4>
-
-                    <!-- <p>
-                        Manage construction projects through a connected
-                        digital environment that improves organization,
-                        visibility, coordination, and project information.
-                    </p> -->
-
-                    <a class="btn text-primary" href="service.html">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Operations Management -->
-        <div class="col-lg-4 col-md-6">
-            <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                <img class="img-fluid"
-                     src="img/service-2.jpg"
-                     alt="Construction Operations Management">
-
-                <div class="service-icon bg-white">
-                    <i class="fa fa-3x fa-cogs text-primary"></i>
-                </div>
-
-                <div class="px-4 pb-4">
-                    <h4 class="text-uppercase mb-3">
-                        Construction Operations
-                    </h4>
-
-                    <!-- <p>
-                        Streamline construction operations and connect
-                        teams, processes, and information to improve
-                        efficiency across daily project activities.
-                    </p> -->
-
-                    <a class="btn text-primary" href="service.html">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Quality Management -->
-        <div class="col-lg-4 col-md-6">
-            <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                <img class="img-fluid"
-                     src="img/service-3.jpg"
-                     alt="Construction Quality Management">
-
-                <div class="service-icon bg-white">
-                    <i class="fa fa-3x fa-check-double text-primary"></i>
-                </div>
-
-                <div class="px-4 pb-4">
-                    <h4 class="text-uppercase mb-3">
-                        Quality Management
-                    </h4>
-
-                    <!-- <p>
-                        Support construction quality processes with better
-                        visibility, organized information, and connected
-                        workflows across your projects.
-                    </p> -->
-
-                    <a class="btn text-primary" href="service.html">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- EHS Management -->
-        <div class="col-lg-4 col-md-6">
-            <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                <img class="img-fluid"
-                     src="img/service-4.jpg"
-                     alt="EHS Management for Construction">
-
-                <div class="service-icon bg-white">
-                    <i class="fa fa-3x fa-shield-alt text-primary"></i>
-                </div>
-
-                <div class="px-4 pb-4">
-                    <h4 class="text-uppercase mb-3">
-                        EHS Management
-                    </h4>
-
-                    <!-- <p>
-                        Integrate Environment, Health & Safety into your
-                        construction management processes and improve
-                        visibility across EHS activities.
-                    </p> -->
-
-                    <a class="btn text-primary" href="service.html">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Data & Information -->
-        <div class="col-lg-4 col-md-6">
-            <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                <img class="img-fluid"
-                     src="img/service-5.jpg"
-                     alt="Construction Project Data Management">
-
-                <div class="service-icon bg-white">
-                    <i class="fa fa-3x fa-database text-primary"></i>
-                </div>
-
-                <div class="px-4 pb-4">
-                    <h4 class="text-uppercase mb-3">
-                        Project Data & Information
-                    </h4>
-
-                    <!-- <p>
-                        Centralize critical project information and make
-                        construction data easier to access, manage, and
-                        use for informed decision-making.
-                    </p> -->
-
-                    <a class="btn text-primary" href="service.html">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Digital Transformation -->
-        <div class="col-lg-4 col-md-6">
-            <div class="service-item bg-white rounded d-flex flex-column align-items-center text-center">
-                <img class="img-fluid"
-                     src="img/service-6.jpg"
-                     alt="Digital Transformation in Construction">
-
-                <div class="service-icon bg-white">
-                    <i class="fa fa-3x fa-laptop-code text-primary"></i>
-                </div>
-
-                <div class="px-4 pb-4">
-                    <h4 class="text-uppercase mb-3">
-                        Digital Construction Solutions
-                    </h4>
-
-                    <!-- <p>
-                        Transform traditional construction processes with
-                        integrated digital solutions built to support
-                        modern construction organizations.
-                    </p> -->
-
-                    <a class="btn text-primary" href="service.html">
-                        Read More <i class="bi bi-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
 
     </div>
-</div>
-<!-- Services End -->
 
-<!-- Why Choose Start -->
-<div class="container-fluid py-6 px-5 bg-white">
-    <div class="row align-items-end mb-5">
-        <div class="col-lg-7">
-            <span class="text-primary text-uppercase fw-bold small">
-                Why CortexIMS
-            </span>
-
-            <h2 class="display-5 text-uppercase mt-2 mb-3">
-                Smarter Construction.
-                <span class="text-primary">Better Results.</span>
-            </h2>
-        </div>
-
-        <div class="col-lg-5">
-            <p class="mb-0 text-muted">
-                We combine digital technology, connected information, and
-                intelligent construction management to help organizations
-                operate with greater visibility and efficiency.
-            </p>
-        </div>
-    </div>
 
     <div class="row g-4">
 
-        <!-- Card 01 -->
+        <!-- Tender & Procurement Management -->
         <div class="col-lg-4 col-md-6">
+
+            <div class="service-item bg-white d-flex flex-column align-items-center text-center h-100">
+
+                <img class="img-fluid"
+                     src="img/9. Tender &amp; Procurement Management ser.jpg"
+                     alt="Tender and procurement management for construction projects"
+                     loading="lazy">
+
+                <div class="service-icon bg-white">
+                    <i class="fa fa-2x fa-file-contract text-primary"></i>
+                </div>
+
+                <div class="px-4 pb-4">
+
+                    <h4 class="text-uppercase mb-3">
+                        Tender &amp; Procurement Management
+                    </h4>
+
+                    <p class="text-muted">
+                        Organize tender activities around clear packages,
+                        accountable owners, and traceable decisions.
+                    </p>
+
+                    <a class="btn text-primary"
+                       href="service.html">
+                        Read More
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Document & Information Control -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="service-item bg-white d-flex flex-column align-items-center text-center h-100">
+
+                <img class="img-fluid"
+                     src="img/8. Document &amp; Information Control.jpg"
+                     alt="Document and information control for construction projects"
+                     loading="lazy">
+
+                <div class="service-icon bg-white">
+                    <i class="fa fa-2x fa-folder-open text-primary"></i>
+                </div>
+
+                <div class="px-4 pb-4">
+
+                    <h4 class="text-uppercase mb-3">
+                        Document &amp; Information Control
+                    </h4>
+
+                    <p class="text-muted">
+                        Structure project information so teams can track
+                        records, responsibilities, and workflow status.
+                    </p>
+
+                    <a class="btn text-primary"
+                       href="service.html">
+                        Read More
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Planning & Progress Monitoring -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="service-item bg-white d-flex flex-column align-items-center text-center h-100">
+
+                <img class="img-fluid"
+                     src="img/7. Planning &amp; Progress Monitoring.jpg"
+                     alt="Construction planning and project progress monitoring"
+                     loading="lazy">
+
+                <div class="service-icon bg-white">
+                    <i class="fa fa-2x fa-chart-line text-primary"></i>
+                </div>
+
+                <div class="px-4 pb-4">
+
+                    <h4 class="text-uppercase mb-3">
+                        Planning &amp; Progress Monitoring
+                    </h4>
+
+                    <p class="text-muted">
+                        Connect planned activities, actual progress,
+                        milestones, and emerging exceptions for clearer
+                        project visibility.
+                    </p>
+
+                    <a class="btn text-primary"
+                       href="service.html">
+                        Read More
+                        <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+
+        <a href="service.html"
+           class="btn btn-primary py-3 px-5">
+            Explore All Services
+        </a>
+
+    </div>
+
+</section>
+<!-- ==================== SERVICES END ==================== -->
+
+<!-- ==================== PROJECT LIFECYCLE START ==================== -->
+<section class="container-fluid py-6 px-5 lifecycle-section"
+         id="project-lifecycle">
+
+    <div class="row align-items-end mb-5">
+
+        <div class="col-lg-7">
+
+            <span class="text-primary text-uppercase fw-bold small">
+                CONNECTED PROJECT LIFECYCLE
+            </span>
+
+            <h2 class="display-5 text-uppercase mt-3 mb-3">
+                From Tender to
+                <span class="text-primary">Asset Operations</span>
+            </h2>
+
+        </div>
+
+        <div class="col-lg-5">
+
+            <p class="mb-0 text-muted">
+                Construction projects generate critical information at every
+                stage. CortexIMS is designed to connect these stages through
+                structured workflows, traceable records, and greater visibility
+                across the asset lifecycle.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="row g-0 lifecycle-row">
+
+        <!-- Stage 1 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="lifecycle-card h-100">
+
+                <span class="text-primary fw-bold">01</span>
+
+                <h4 class="text-uppercase mt-3 mb-3">
+                    Tender &amp; Procurement
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Organize tender packages, bidder queries,
+                    evaluations, approvals, and award readiness.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Stage 2 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="lifecycle-card h-100">
+
+                <span class="text-primary fw-bold">02</span>
+
+                <h4 class="text-uppercase mt-3 mb-3">
+                    Pre-Construction
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Structure submittals, mobilization information,
+                    baseline plans, and required approvals.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Stage 3 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="lifecycle-card h-100">
+
+                <span class="text-primary fw-bold">03</span>
+
+                <h4 class="text-uppercase mt-3 mb-3">
+                    Construction
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Connect progress monitoring, RFIs, quality,
+                    HSE, resources, and project records.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row g-0 lifecycle-row">
+
+        <!-- Stage 4 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="lifecycle-card h-100">
+
+                <span class="text-primary fw-bold">04</span>
+
+                <h4 class="text-uppercase mt-3 mb-3">
+                    Testing &amp; Commissioning
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Track testing records, outstanding items,
+                    readiness status, and supporting evidence.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Stage 5 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="lifecycle-card h-100">
+
+                <span class="text-primary fw-bold">05</span>
+
+                <h4 class="text-uppercase mt-3 mb-3">
+                    Handover &amp; Closeout
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Organize as-built drawings, O&amp;M documents,
+                    warranties, asset records, and closure evidence.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Stage 6 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="lifecycle-card h-100">
+
+                <span class="text-primary fw-bold">06</span>
+
+                <h4 class="text-uppercase mt-3 mb-3">
+                    Facilities Management
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Support maintenance planning, work orders,
+                    warranty tracking, and asset history.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="text-center mt-5">
+
+        <h5 class="mb-4">
+            One Project Record. One Evidence Trail.
+            One Asset-Information Foundation.
+        </h5>
+
+        <a href="Solutions.html"
+           class="btn btn-primary py-3 px-5">
+            Explore Our Solutions
+            <i class="bi bi-arrow-right ms-2"></i>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ==================== PROJECT LIFECYCLE END ==================== -->
+
+<!-- ==================== WHY CORTEXIMS START ==================== -->
+
+<section class="container-fluid py-6 px-5 bg-light"
+         id="why-cortexims">
+
+    <div class="row align-items-end mb-5">
+
+        <div class="col-lg-7">
+
+            <span class="text-primary text-uppercase fw-bold small">
+                WHY CORTEXIMS
+            </span>
+
+            <h2 class="display-5 text-uppercase mt-3 mb-3">
+                Built Around Construction Workflows.
+                <span class="text-primary">
+                    Designed for Connected Decisions.
+                </span>
+            </h2>
+
+        </div>
+
+
+        <div class="col-lg-5">
+
+            <p class="mb-0 text-muted">
+                Construction management requires more than collecting
+                information. Teams need to understand what is happening,
+                who is responsible, what requires action, and whether
+                the supporting evidence is complete.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="row g-4">
+
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6">
+
             <div class="why-card bg-white p-4 h-100 position-relative">
+
                 <div class="why-number">01</div>
 
                 <div class="why-icon mb-4">
@@ -593,146 +810,203 @@
                 </div>
 
                 <h4 class="text-uppercase mb-3">
-                    Connected
+                    Connected Workflows
                 </h4>
 
                 <p class="text-muted mb-0">
-                    Connect teams, processes, and project information
-                    within one integrated digital environment.
+                    Link related construction activities and information
+                    across project functions.
                 </p>
+
             </div>
+
         </div>
 
-        <!-- Card 02 -->
+
+        <!-- Card 2 -->
         <div class="col-lg-4 col-md-6">
+
             <div class="why-card bg-white p-4 h-100 position-relative">
+
                 <div class="why-number">02</div>
+
+                <div class="why-icon mb-4">
+                    <i class="fa fa-file-alt"></i>
+                </div>
+
+                <h4 class="text-uppercase mb-3">
+                    Traceable Information
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Keep decisions, documents, approvals, and supporting
+                    evidence easier to follow.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="why-card bg-white p-4 h-100 position-relative">
+
+                <div class="why-number">03</div>
 
                 <div class="why-icon mb-4">
                     <i class="fa fa-eye"></i>
                 </div>
 
                 <h4 class="text-uppercase mb-3">
-                    Better Visibility
+                    Exception Visibility
                 </h4>
 
                 <p class="text-muted mb-0">
-                    Gain clearer visibility across projects, operations,
-                    quality, and critical construction information.
+                    Highlight outstanding issues, overdue actions,
+                    and decisions requiring attention.
                 </p>
+
             </div>
+
         </div>
 
-        <!-- Card 03 -->
+
+        <!-- Card 4 -->
         <div class="col-lg-4 col-md-6">
+
             <div class="why-card bg-white p-4 h-100 position-relative">
-                <div class="why-number">03</div>
+
+                <div class="why-number">04</div>
 
                 <div class="why-icon mb-4">
-                    <i class="fa fa-lightbulb"></i>
+                    <i class="fa fa-users-cog"></i>
                 </div>
 
                 <h4 class="text-uppercase mb-3">
-                    Smarter Decisions
+                    Accountable Processes
                 </h4>
 
                 <p class="text-muted mb-0">
-                    Turn connected project data into useful insights
-                    that support informed decision-making.
+                    Structure workflow ownership, responsibilities,
+                    and follow-up activities.
                 </p>
+
             </div>
+
         </div>
 
-        <!-- Card 04 -->
+
+        <!-- Card 5 -->
         <div class="col-lg-4 col-md-6">
+
             <div class="why-card bg-white p-4 h-100 position-relative">
-                <div class="why-number">04</div>
+
+                <div class="why-number">05</div>
+
+                <div class="why-icon mb-4">
+                    <i class="fa fa-project-diagram"></i>
+                </div>
+
+                <h4 class="text-uppercase mb-3">
+                    Lifecycle Continuity
+                </h4>
+
+                <p class="text-muted mb-0">
+                    Maintain information connections from tender and
+                    construction through handover and operations.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Card 6 -->
+        <div class="col-lg-4 col-md-6">
+
+            <div class="why-card bg-white p-4 h-100 position-relative">
+
+                <div class="why-number">06</div>
 
                 <div class="why-icon mb-4">
                     <i class="fa fa-chart-line"></i>
                 </div>
 
                 <h4 class="text-uppercase mb-3">
-                    Greater Efficiency
+                    Measurable Improvement
                 </h4>
 
                 <p class="text-muted mb-0">
-                    Streamline construction management processes and
-                    reduce operational fragmentation.
+                    Establish baseline measures and evaluate pilot
+                    outcomes before expanding the scope.
                 </p>
+
             </div>
-        </div>
 
-        <!-- Card 05 -->
-        <div class="col-lg-4 col-md-6">
-            <div class="why-card bg-white p-4 h-100 position-relative">
-                <div class="why-number">05</div>
-
-                <div class="why-icon mb-4">
-                    <i class="fa fa-shield-alt"></i>
-                </div>
-
-                <h4 class="text-uppercase mb-3">
-                    Quality & EHS
-                </h4>
-
-                <p class="text-muted mb-0">
-                    Support quality management and Environment, Health &
-                    Safety throughout construction operations.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 06 -->
-        <div class="col-lg-4 col-md-6">
-            <div class="why-card bg-white p-4 h-100 position-relative">
-                <div class="why-number">06</div>
-
-                <div class="why-icon mb-4">
-                    <i class="fa fa-laptop-code"></i>
-                </div>
-
-                <h4 class="text-uppercase mb-3">
-                    Digital Transformation
-                </h4>
-
-                <p class="text-muted mb-0">
-                    Move beyond disconnected processes with modern
-                    digital construction solutions.
-                </p>
-            </div>
         </div>
 
     </div>
-</div>
-<!-- Why Choose End -->
 
-    <!-- Portfolio Start -->
-    <section class="container-fluid home-solutions-bridge py-6 px-5">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-5">
-                <img class="home-solutions-image" src="img/what.jpg" alt="Construction project supported by connected digital solutions" loading="lazy">
-            </div>
-            <div class="col-lg-7">
-                <span class="solutions-eyebrow">CORTEXIMS SOLUTIONS</span>
-                <h2 class="display-5 text-uppercase mb-3">One connected workspace for every project</h2>
-                <p class="text-muted mb-4">Give teams shared visibility, organized workflows, and the information they need to move projects forward.</p>
-                <ul class="home-solutions-focus list-unstyled d-flex flex-wrap mb-4">
-                    <li>Project delivery</li>
-                    <li>Quality &amp; EHS</li>
-                    <li>Project data</li>
-                </ul>
-                <a href="project.html#solutions-list" class="btn btn-primary py-3 px-5">Explore Our Solutions <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i></a>
-            </div>
+</section>
+
+<!-- ==================== WHY CORTEXIMS END ==================== -->
+
+<!-- ==================== FINAL CTA START ==================== -->
+
+<section class="container-fluid py-6 px-5 bg-dark text-white"
+         id="contact-cta">
+
+    <div class="row align-items-center g-4">
+
+        <div class="col-lg-8">
+
+            <span class="text-primary text-uppercase fw-bold small">
+                LET'S CONNECT
+            </span>
+
+            <h2 class="display-5 text-uppercase mt-3 mb-3">
+                Ready to Connect Your
+                <span class="text-primary">
+                    Construction Workflows?
+                </span>
+            </h2>
+
+            <p class="mb-0">
+                Start with your project's priorities and explore
+                a practical approach to more connected construction
+                management and information continuity.
+            </p>
+
         </div>
-    </section>
-   <!-- Portfolio Start -->
+
+
+        <div class="col-lg-4 text-lg-end">
+
+            <a href="contact.html"
+               class="btn btn-primary py-3 px-5">
+
+                Discuss Your Project
+
+                <i class="bi bi-arrow-right ms-2"
+                   aria-hidden="true"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==================== FINAL CTA END ==================== -->
      <!-- Footer Start -->
     <div class="footer container-fluid position-relative bg-dark bg-light-radial text-white-50 py-6 px-5">
         <div class="row g-5">
             <div class="col-lg-6 pe-lg-5">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 display-4 text-uppercase text-white"><img src="img/logo.png" alt="Logo" width="200"></h1>
+                    <span class="m-0 display-4 text-uppercase text-white"><img src="img/logo.png" alt="CortexIMS" width="200"></span>
                 </a>
                 <p class="text-decoration-none text-white" >
 Connecting Construction, Data, and Digital Intelligence.
@@ -809,7 +1083,7 @@ Connecting Construction, Data, and Digital Intelligence.
     <a class="text-white mb-2" href="service.html">
         <i class="fa fa-angle-right me-2 text-white"></i>Our Services
     </a>
-    <a class="text-white mb-2" href="project.html">
+    <a class="text-white mb-2" href="Solutions.html">
         <i class="fa fa-angle-right me-2 text-white"></i>Solutions
     </a>
     <a class="text-white" href="contact.html">
@@ -841,11 +1115,12 @@ Connecting Construction, Data, and Digital Intelligence.
         </div>
     </div>
     <!-- Footer End -->
-
-
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="contact.html" class="mobile-contact-cta" aria-label="Discuss your construction project with CortexIMS">
+        <i class="fa fa-comments" aria-hidden="true"></i>
+        <span>Discuss your project</span>
+    </a>
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up" aria-hidden="true"></i></a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

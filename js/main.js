@@ -3,6 +3,10 @@
     
     // Dropdown on mouse hover
     $(document).ready(function () {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            $('#header-carousel').carousel('pause');
+        }
+
         function toggleNavbarMethod() {
             if ($(window).width() > 992) {
                 $('.navbar .dropdown').on('mouseover', function () {
@@ -57,4 +61,3 @@
     });
     
 })(jQuery);
-

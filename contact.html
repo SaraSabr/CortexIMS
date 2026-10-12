@@ -8,7 +8,7 @@
     <meta name="description" content="Contact CortexIMS in Dubai to discuss construction project management and digital construction solutions. Call, email or WhatsApp our team.">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/logo.png" rel="icon" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +29,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="site-page page-contact">
     <!-- Topbar Start -->
     <div class="site-topbar container-fluid px-5 d-none d-lg-block">
         <div class="row gx-5">
@@ -77,20 +77,20 @@
     <div class="site-navbar container-fluid sticky-top bg-dark bg-light-radial shadow-sm px-5 pe-lg-0">
         <nav class="navbar navbar-expand-lg bg-dark bg-light-radial navbar-dark py-3 py-lg-0">
             <a href="index.html" class="navbar-brand">
-                <h1 class="m-0 display-4 text-uppercase text-white">
+                <span class="m-0 display-4 text-uppercase text-white">
                     <!-- <i class="bi bi-building text-primary me-2"></i>CortexIMS -->
-                      <img src="img/logo.png" alt="Logo" width="200">
-                </h1>
+                      <img src="img/logo.png" alt="CortexIMS" width="200">
+                </span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="index.html" class="nav-item nav-link">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
-                    <a href="project.html" class="nav-item nav-link">Solutions</a>
+                    <a href="service.html" class="nav-item nav-link">Services</a>
+                    <a href="Solutions.html" class="nav-item nav-link">Solutions</a>
                     <a href="contact.html" class="nav-item nav-link active">Contact</a>
                     <a href="ar/contact.html" class="site-language-link nav-item nav-link bg-primary text-white" lang="ar">العربية <i class="bi bi-translate"></i></a>
                       </div>
@@ -105,7 +105,7 @@
     <div class="container-fluid page-header">
         <h1 class="display-3 text-uppercase text-white mb-3">Contact</h1>
         <div class="d-inline-flex text-white">
-            <h6 class="text-uppercase m-0"><a href="">Home</a></h6>
+            <h6 class="text-uppercase m-0"><a href="index.html">Home</a></h6>
             <h6 class="text-white m-0 px-3">/</h6>
             <h6 class="text-uppercase text-white m-0">Contact</h6>
         </div>
@@ -113,22 +113,24 @@
     <!-- Page Header Start -->
 
 <!-- Contact Start -->
-<div class="container-fluid py-6 px-5">
+<div class="container-fluid py-6 px-5 contact-content">
 
     <div class="text-center mx-auto mb-5" style="max-width: 600px;">
-        <h1 class="display-5 text-uppercase mb-4">
+        <span class="page-eyebrow">Start a conversation</span>
+        <h2 class="display-5 mb-4">
             Please <span class="text-primary">Feel Free</span> To Contact Us
-        </h1>
+        </h2>
     </div>
 
     <div class="row gx-0 align-items-stretch">
 
         <!-- Map -->
-        <div class="col-lg-6 mb-5 mb-lg-0" style="min-height: 600px;">
+        <div class="col-lg-6 mb-5 mb-lg-0 order-2 order-lg-1" style="min-height: 600px;">
 
             <iframe
                 class="w-100 h-100"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.953646945745!2d55.15189578499379!3d25.03564708397155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6d26395a09a9%3A0x4d39bf6784096232!2zMjE3IC0gMTEgRGlzY292ZXJ5IEdhcmRlbnMgU3RyZWV0IDggLSDYrNio2YQg2LnZhNmKINin2YTYo9mI2YTZiSAtINiv2YrYs9mD2YHYsdmKINis2KfYsdiv2YbYsiAtINiv2KjZiiAtINin2YTYpdmF2KfYsdin2Kog2KfZhNi52LHYqNmK2Kkg2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2seg!4v1789933137741!5m2!1sar!2seg"
+                title="CortexIMS office location in Dubai"
+                src="https://maps.google.com/maps?q=217%20Discovery%20Gardens%20Street%2011%2C%20Dubai%2C%20UAE&amp;output=embed"
                 width="600"
                 height="450"
                 style="border:0;"
@@ -140,7 +142,7 @@
         </div>
 
         <!-- Contact Information -->
-        <div class="col-lg-6">
+        <div class="col-lg-6 order-1 order-lg-2">
 
             <div class="bg-light p-5 h-100 d-flex flex-column justify-content-center">
 
@@ -201,6 +203,7 @@
                         <h6 class="text-uppercase mb-1">WhatsApp</h6>
                         <a href="https://wa.me/971567475666"
                            target="_blank"
+                           rel="noopener"
                            class="text-decoration-none text-body">
                             Chat With Our Team
                         </a>
@@ -208,23 +211,7 @@
 
                 </div>
 
-                <!-- Buttons -->
-                <div class="d-flex gap-2 mt-2">
-
-                    <a href="mailto:info@cortexims.com"
-                       class="btn btn-primary px-4 py-3">
-                        <i class="fa fa-paper-plane me-2"></i>
-                        Contact Us
-                    </a>
-
-                    <a href="https://wa.me/971567475666"
-                       target="_blank"
-                       class="btn btn-outline-primary px-4 py-3">
-                        <i class="fab fa-whatsapp me-2"></i>
-                        WhatsApp
-                    </a>
-
-                </div>
+    
 
             </div>
 
@@ -245,9 +232,9 @@
         <div class="row g-5">
             <div class="col-lg-6 pe-lg-5">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 display-4 text-uppercase text-white"><img src="img/logo.png" alt="Logo" width="200"></h1>
+                    <span class="m-0 display-4 text-uppercase text-white"><img src="img/logo.png" alt="CortexIMS" width="200"></span>
                 </a>
-                <p class="text-decoration-none text-white" >Aliquyam sed elitr elitr erat sed diam ipsum eirmod eos lorem nonumy. Tempor sea ipsum diam  sed clita dolore eos dolores magna erat dolore sed stet justo et dolor.</p>
+                <p class="text-decoration-none text-white">Connecting construction, data, and digital intelligence across every project stage.</p>
                 <p><i class="fa fa-map-marker-alt me-2"></i><a href="https://www.google.com/maps/search/?api=1&query=217+Discovery+Gardens+Street+11%2C+Dubai%2C+UAE"
    target="_blank"class="text-decoration-none text-white">217 Discovery Gardens Street 11, Dubai, UAE</a></p>
                 <p><i class="fa fa-phone-alt me-2"></i> <a href="tel:+971567475666" class="text-decoration-none text-white">
@@ -320,7 +307,7 @@
     <a class="text-white mb-2" href="service.html">
         <i class="fa fa-angle-right me-2 text-white"></i>Our Services
     </a>
-    <a class="text-white mb-2" href="project.html">
+    <a class="text-white mb-2" href="Solutions.html">
         <i class="fa fa-angle-right me-2 text-white"></i>Solutions
     </a>
     <a class="text-white" href="contact.html">
@@ -369,6 +356,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/contact-form.js"></script>
 </body>
 
 </html>
